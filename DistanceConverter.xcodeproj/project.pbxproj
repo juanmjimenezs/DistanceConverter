@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A54563F21DA987BD00C135DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54563F11DA987BD00C135DC /* AppDelegate.swift */; };
+		A54563F41DA987BD00C135DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54563F31DA987BD00C135DC /* ViewController.swift */; };
+		A54563F71DA987BD00C135DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54563F51DA987BD00C135DC /* Main.storyboard */; };
+		A54563F91DA987BD00C135DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54563F81DA987BD00C135DC /* Assets.xcassets */; };
+		A54563FC1DA987BD00C135DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54563FA1DA987BD00C135DC /* LaunchScreen.storyboard */; };
+		A54564071DA987BD00C135DC /* DistanceConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54564061DA987BD00C135DC /* DistanceConverterTests.swift */; };
+		A54564121DA987BD00C135DC /* DistanceConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54564111DA987BD00C135DC /* DistanceConverterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A54564031DA987BD00C135DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54563E61DA987BD00C135DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54563ED1DA987BD00C135DC;
+			remoteInfo = DistanceConverter;
+		};
+		A545640E1DA987BD00C135DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54563E61DA987BD00C135DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54563ED1DA987BD00C135DC;
+			remoteInfo = DistanceConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A54563EE1DA987BD00C135DC /* DistanceConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54563F11DA987BD00C135DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A54563F31DA987BD00C135DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A54563F61DA987BD00C135DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A54563F81DA987BD00C135DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A54563FB1DA987BD00C135DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A54563FD1DA987BD00C135DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54564021DA987BD00C135DC /* DistanceConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54564061DA987BD00C135DC /* DistanceConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConverterTests.swift; sourceTree = "<group>"; };
+		A54564081DA987BD00C135DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A545640D1DA987BD00C135DC /* DistanceConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DistanceConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54564111DA987BD00C135DC /* DistanceConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConverterUITests.swift; sourceTree = "<group>"; };
+		A54564131DA987BD00C135DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54563EB1DA987BD00C135DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54563FF1DA987BD00C135DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A545640A1DA987BD00C135DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A54563E51DA987BD00C135DC = {
+			isa = PBXGroup;
+			children = (
+				A54563F01DA987BD00C135DC /* DistanceConverter */,
+				A54564051DA987BD00C135DC /* DistanceConverterTests */,
+				A54564101DA987BD00C135DC /* DistanceConverterUITests */,
+				A54563EF1DA987BD00C135DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A54563EF1DA987BD00C135DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54563EE1DA987BD00C135DC /* DistanceConverter.app */,
+				A54564021DA987BD00C135DC /* DistanceConverterTests.xctest */,
+				A545640D1DA987BD00C135DC /* DistanceConverterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54563F01DA987BD00C135DC /* DistanceConverter */ = {
+			isa = PBXGroup;
+			children = (
+				A54563F11DA987BD00C135DC /* AppDelegate.swift */,
+				A54563F31DA987BD00C135DC /* ViewController.swift */,
+				A54563F51DA987BD00C135DC /* Main.storyboard */,
+				A54563F81DA987BD00C135DC /* Assets.xcassets */,
+				A54563FA1DA987BD00C135DC /* LaunchScreen.storyboard */,
+				A54563FD1DA987BD00C135DC /* Info.plist */,
+			);
+			path = DistanceConverter;
+			sourceTree = "<group>";
+		};
+		A54564051DA987BD00C135DC /* DistanceConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A54564061DA987BD00C135DC /* DistanceConverterTests.swift */,
+				A54564081DA987BD00C135DC /* Info.plist */,
+			);
+			path = DistanceConverterTests;
+			sourceTree = "<group>";
+		};
+		A54564101DA987BD00C135DC /* DistanceConverterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A54564111DA987BD00C135DC /* DistanceConverterUITests.swift */,
+				A54564131DA987BD00C135DC /* Info.plist */,
+			);
+			path = DistanceConverterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A54563ED1DA987BD00C135DC /* DistanceConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54564161DA987BD00C135DC /* Build configuration list for PBXNativeTarget "DistanceConverter" */;
+			buildPhases = (
+				A54563EA1DA987BD00C135DC /* Sources */,
+				A54563EB1DA987BD00C135DC /* Frameworks */,
+				A54563EC1DA987BD00C135DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DistanceConverter;
+			productName = DistanceConverter;
+			productReference = A54563EE1DA987BD00C135DC /* DistanceConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A54564011DA987BD00C135DC /* DistanceConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54564191DA987BD00C135DC /* Build configuration list for PBXNativeTarget "DistanceConverterTests" */;
+			buildPhases = (
+				A54563FE1DA987BD00C135DC /* Sources */,
+				A54563FF1DA987BD00C135DC /* Frameworks */,
+				A54564001DA987BD00C135DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54564041DA987BD00C135DC /* PBXTargetDependency */,
+			);
+			name = DistanceConverterTests;
+			productName = DistanceConverterTests;
+			productReference = A54564021DA987BD00C135DC /* DistanceConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A545640C1DA987BD00C135DC /* DistanceConverterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A545641C1DA987BD00C135DC /* Build configuration list for PBXNativeTarget "DistanceConverterUITests" */;
+			buildPhases = (
+				A54564091DA987BD00C135DC /* Sources */,
+				A545640A1DA987BD00C135DC /* Frameworks */,
+				A545640B1DA987BD00C135DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A545640F1DA987BD00C135DC /* PBXTargetDependency */,
+			);
+			name = DistanceConverterUITests;
+			productName = DistanceConverterUITests;
+			productReference = A545640D1DA987BD00C135DC /* DistanceConverterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54563E61DA987BD00C135DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Juan Manuel Jimenez Sanchez";
+				TargetAttributes = {
+					A54563ED1DA987BD00C135DC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					A54564011DA987BD00C135DC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A54563ED1DA987BD00C135DC;
+					};
+					A545640C1DA987BD00C135DC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A54563ED1DA987BD00C135DC;
+					};
+				};
+			};
+			buildConfigurationList = A54563E91DA987BD00C135DC /* Build configuration list for PBXProject "DistanceConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A54563E51DA987BD00C135DC;
+			productRefGroup = A54563EF1DA987BD00C135DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54563ED1DA987BD00C135DC /* DistanceConverter */,
+				A54564011DA987BD00C135DC /* DistanceConverterTests */,
+				A545640C1DA987BD00C135DC /* DistanceConverterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A54563EC1DA987BD00C135DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54563FC1DA987BD00C135DC /* LaunchScreen.storyboard in Resources */,
+				A54563F91DA987BD00C135DC /* Assets.xcassets in Resources */,
+				A54563F71DA987BD00C135DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54564001DA987BD00C135DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A545640B1DA987BD00C135DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54563EA1DA987BD00C135DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54563F41DA987BD00C135DC /* ViewController.swift in Sources */,
+				A54563F21DA987BD00C135DC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54563FE1DA987BD00C135DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54564071DA987BD00C135DC /* DistanceConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54564091DA987BD00C135DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54564121DA987BD00C135DC /* DistanceConverterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A54564041DA987BD00C135DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54563ED1DA987BD00C135DC /* DistanceConverter */;
+			targetProxy = A54564031DA987BD00C135DC /* PBXContainerItemProxy */;
+		};
+		A545640F1DA987BD00C135DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54563ED1DA987BD00C135DC /* DistanceConverter */;
+			targetProxy = A545640E1DA987BD00C135DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A54563F51DA987BD00C135DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54563F61DA987BD00C135DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A54563FA1DA987BD00C135DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54563FB1DA987BD00C135DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A54564141DA987BD00C135DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A54564151DA987BD00C135DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A54564171DA987BD00C135DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DistanceConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmjimenezs.DistanceConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A54564181DA987BD00C135DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DistanceConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmjimenezs.DistanceConverter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A545641A1DA987BD00C135DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DistanceConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmjimenezs.DistanceConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistanceConverter.app/DistanceConverter";
+			};
+			name = Debug;
+		};
+		A545641B1DA987BD00C135DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DistanceConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmjimenezs.DistanceConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DistanceConverter.app/DistanceConverter";
+			};
+			name = Release;
+		};
+		A545641D1DA987BD00C135DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DistanceConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmjimenezs.DistanceConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DistanceConverter;
+			};
+			name = Debug;
+		};
+		A545641E1DA987BD00C135DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DistanceConverterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanmjimenezs.DistanceConverterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DistanceConverter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A54563E91DA987BD00C135DC /* Build configuration list for PBXProject "DistanceConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54564141DA987BD00C135DC /* Debug */,
+				A54564151DA987BD00C135DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54564161DA987BD00C135DC /* Build configuration list for PBXNativeTarget "DistanceConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54564171DA987BD00C135DC /* Debug */,
+				A54564181DA987BD00C135DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A54564191DA987BD00C135DC /* Build configuration list for PBXNativeTarget "DistanceConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A545641A1DA987BD00C135DC /* Debug */,
+				A545641B1DA987BD00C135DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A545641C1DA987BD00C135DC /* Build configuration list for PBXNativeTarget "DistanceConverterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A545641D1DA987BD00C135DC /* Debug */,
+				A545641E1DA987BD00C135DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A54563E61DA987BD00C135DC /* Project object */;
+}
