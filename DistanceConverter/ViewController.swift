@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         let originDistanceType = originSegmentedControl.selectedSegmentIndex
         let destinationDistanceType = destinationSegmentControl.selectedSegmentIndex
         
-        if distanceTextField.text != nil {
+        if (distanceTextField.text?.isEmpty)! == false {
             let originDistanceValue = Double(distanceTextField.text!)!
             var convertedValue = ""
             
