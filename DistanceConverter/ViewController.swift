@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func distanceTextFieldChanged(_ sender: UITextField) {
+        convertProcess()
+    }
+    
     @IBAction func originSegmentedPressed(_ sender: UISegmentedControl) {
         convertProcess()
     }
