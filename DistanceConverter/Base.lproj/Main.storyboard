@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,72 +16,106 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-Hg-ciN">
-                                <frame key="frameInset" minX="66" minY="48" width="242" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the value to convert" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aee-pf-jsp">
-                                <frame key="frameInset" minX="16" minY="119" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
-                                <connections>
-                                    <action selector="distanceTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="vAg-ee-TmU"/>
-                                </connections>
-                            </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-7v-hd3">
-                                <frame key="frameInset" minX="16" minY="172" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Miles"/>
-                                    <segment title="Km"/>
-                                    <segment title="Yards"/>
-                                    <segment title="Meters"/>
-                                </segments>
-                                <connections>
-                                    <action selector="originSegmentedPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="3it-Hj-D3P"/>
-                                </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-m8-aW5">
-                                <frame key="frameInset" minX="16" minY="253" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Miles"/>
-                                    <segment title="Km"/>
-                                    <segment title="Yards"/>
-                                    <segment title="Meters"/>
-                                </segments>
-                                <connections>
-                                    <action selector="destinationSegmentedPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="vgm-9d-zqb"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yum-DV-4L4">
-                                <frame key="frameInset" minX="178" minY="218" width="19" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="distance" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-LT-GRr">
-                                <frame key="frameInset" minX="16" minY="420" width="343" height="227"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here, the value converted" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-1F-Xh7">
-                                <frame key="frameInset" minX="16" minY="300" width="343" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0C-41-leB">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The converted value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-1F-Xh7">
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="distance" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-LT-GRr"/>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3iP-LT-GRr" firstAttribute="centerX" secondItem="o0C-41-leB" secondAttribute="centerX" id="7Xc-qf-pTt"/>
+                                    <constraint firstItem="jfX-1F-Xh7" firstAttribute="leading" secondItem="o0C-41-leB" secondAttribute="leading" constant="15" id="N0n-5i-udx"/>
+                                    <constraint firstItem="3iP-LT-GRr" firstAttribute="height" secondItem="o0C-41-leB" secondAttribute="height" multiplier="0.9" id="Vw5-0t-oTu"/>
+                                    <constraint firstItem="3iP-LT-GRr" firstAttribute="width" secondItem="o0C-41-leB" secondAttribute="width" id="ehY-dx-Ymz"/>
+                                    <constraint firstAttribute="bottom" secondItem="3iP-LT-GRr" secondAttribute="bottom" id="oEM-Hv-s5F"/>
+                                    <constraint firstItem="jfX-1F-Xh7" firstAttribute="top" secondItem="o0C-41-leB" secondAttribute="top" constant="20" id="zoW-30-293"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mO-xP-muP">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-Hg-ciN">
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wCB-7v-hd3">
+                                        <segments>
+                                            <segment title="Miles"/>
+                                            <segment title="Km"/>
+                                            <segment title="Yards"/>
+                                            <segment title="Meters"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="originSegmentedPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="3it-Hj-D3P"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-m8-aW5">
+                                        <segments>
+                                            <segment title="Miles"/>
+                                            <segment title="Km"/>
+                                            <segment title="Yards"/>
+                                            <segment title="Meters"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="destinationSegmentedPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="vgm-9d-zqb"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yum-DV-4L4">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the value to convert" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aee-pf-jsp">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                        <connections>
+                                            <action selector="distanceTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="vAg-ee-TmU"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wCB-7v-hd3" firstAttribute="top" secondItem="aee-pf-jsp" secondAttribute="bottom" constant="20" id="21m-3P-zJ6"/>
+                                    <constraint firstItem="yum-DV-4L4" firstAttribute="top" secondItem="wCB-7v-hd3" secondAttribute="bottom" constant="10" id="EER-ab-Hpx"/>
+                                    <constraint firstItem="ffj-Hg-ciN" firstAttribute="top" secondItem="2mO-xP-muP" secondAttribute="top" constant="10" id="F3B-zT-4xI"/>
+                                    <constraint firstItem="ffj-Hg-ciN" firstAttribute="width" secondItem="2mO-xP-muP" secondAttribute="width" multiplier="0.9" id="JgN-31-yeO"/>
+                                    <constraint firstItem="vNL-m8-aW5" firstAttribute="centerX" secondItem="2mO-xP-muP" secondAttribute="centerX" id="YgE-Uq-wbk"/>
+                                    <constraint firstItem="aee-pf-jsp" firstAttribute="width" secondItem="2mO-xP-muP" secondAttribute="width" multiplier="0.9" id="ZVE-41-Fhx"/>
+                                    <constraint firstItem="aee-pf-jsp" firstAttribute="centerX" secondItem="2mO-xP-muP" secondAttribute="centerX" id="gQl-ET-Fxn"/>
+                                    <constraint firstItem="ffj-Hg-ciN" firstAttribute="centerX" secondItem="2mO-xP-muP" secondAttribute="centerX" id="gfH-c3-wH3"/>
+                                    <constraint firstItem="vNL-m8-aW5" firstAttribute="top" secondItem="yum-DV-4L4" secondAttribute="bottom" constant="10" id="htW-Ih-ahD"/>
+                                    <constraint firstItem="aee-pf-jsp" firstAttribute="top" secondItem="ffj-Hg-ciN" secondAttribute="bottom" constant="20" id="iVe-iu-drX"/>
+                                    <constraint firstItem="wCB-7v-hd3" firstAttribute="centerX" secondItem="2mO-xP-muP" secondAttribute="centerX" id="jkF-Ol-cn0"/>
+                                    <constraint firstItem="yum-DV-4L4" firstAttribute="centerX" secondItem="2mO-xP-muP" secondAttribute="centerX" id="qPy-qC-HrG"/>
+                                    <constraint firstItem="vNL-m8-aW5" firstAttribute="width" secondItem="2mO-xP-muP" secondAttribute="width" multiplier="0.9" id="tCO-92-Pbt"/>
+                                    <constraint firstItem="wCB-7v-hd3" firstAttribute="width" secondItem="2mO-xP-muP" secondAttribute="width" multiplier="0.9" id="vzN-g2-s8m"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.81167581756077845" green="0.81056917264243078" blue="0.82989950288134717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00Z-CY-gdl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o0C-41-leB" secondAttribute="bottom" id="0gY-vs-wTi"/>
+                            <constraint firstItem="o0C-41-leB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="17v-eP-dUn"/>
+                            <constraint firstItem="o0C-41-leB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="5LE-hB-nFd"/>
+                            <constraint firstItem="o0C-41-leB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67k-Au-7BT"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="V8X-ok-2ma"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="blG-eR-wCy"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="sgJ-Lf-R8b"/>
+                        </constraints>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="00Z-CY-gdl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="destinationSegmentControl" destination="vNL-m8-aW5" id="tTB-tB-6nZ"/>
@@ -91,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-81.159420289855078" y="136.14130434782609"/>
         </scene>
     </scenes>
     <resources>
