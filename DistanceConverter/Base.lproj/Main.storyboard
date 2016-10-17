@@ -103,17 +103,44 @@
                         <color key="backgroundColor" red="0.81167581756077845" green="0.81056917264243078" blue="0.82989950288134717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00Z-CY-gdl"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0gA-6Q-qTR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o0C-41-leB" secondAttribute="bottom" id="0gY-vs-wTi"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="17v-eP-dUn"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="5LE-hB-nFd"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67k-Au-7BT"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="M71-tJ-0N1"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Non-l6-Gvu"/>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="V8X-ok-2ma"/>
+                            <constraint firstItem="o0C-41-leB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="VVA-Ko-iLz"/>
+                            <constraint firstItem="o0C-41-leB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="VWq-7D-AYa"/>
+                            <constraint firstAttribute="trailing" secondItem="o0C-41-leB" secondAttribute="trailing" id="X8B-rq-wQW"/>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="blG-eR-wCy"/>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="sgJ-Lf-R8b"/>
                         </constraints>
-                        <variation key="heightClass=compact-widthClass=regular">
+                        <variation key="default">
                             <mask key="constraints">
-                                <include reference="00Z-CY-gdl"/>
+                                <exclude reference="0gA-6Q-qTR"/>
+                                <exclude reference="M71-tJ-0N1"/>
+                                <exclude reference="Non-l6-Gvu"/>
+                                <exclude reference="VVA-Ko-iLz"/>
+                                <exclude reference="VWq-7D-AYa"/>
+                                <exclude reference="X8B-rq-wQW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="00Z-CY-gdl"/>
+                                <include reference="0gA-6Q-qTR"/>
+                                <include reference="M71-tJ-0N1"/>
+                                <include reference="Non-l6-Gvu"/>
+                                <exclude reference="V8X-ok-2ma"/>
+                                <exclude reference="sgJ-Lf-R8b"/>
+                                <exclude reference="17v-eP-dUn"/>
+                                <exclude reference="5LE-hB-nFd"/>
+                                <exclude reference="67k-Au-7BT"/>
+                                <include reference="VVA-Ko-iLz"/>
+                                <include reference="VWq-7D-AYa"/>
+                                <include reference="X8B-rq-wQW"/>
                             </mask>
                         </variation>
                     </view>
