@@ -16,29 +16,33 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0C-41-leB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0C-41-leB" userLabel="ViewResult">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The converted value" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-1F-Xh7">
-                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The result..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-1F-Xh7">
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="31"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="59"/>
+                                        </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="distance" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-LT-GRr"/>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="3iP-LT-GRr" firstAttribute="centerX" secondItem="o0C-41-leB" secondAttribute="centerX" id="7Xc-qf-pTt"/>
-                                    <constraint firstItem="jfX-1F-Xh7" firstAttribute="leading" secondItem="o0C-41-leB" secondAttribute="leading" constant="15" id="N0n-5i-udx"/>
+                                    <constraint firstItem="jfX-1F-Xh7" firstAttribute="width" secondItem="o0C-41-leB" secondAttribute="width" multiplier="0.9" id="9UX-6q-Li8"/>
                                     <constraint firstItem="3iP-LT-GRr" firstAttribute="height" secondItem="o0C-41-leB" secondAttribute="height" multiplier="0.9" id="Vw5-0t-oTu"/>
+                                    <constraint firstItem="jfX-1F-Xh7" firstAttribute="leading" secondItem="o0C-41-leB" secondAttribute="leading" constant="10" id="c2M-bx-Zs1"/>
                                     <constraint firstItem="3iP-LT-GRr" firstAttribute="width" secondItem="o0C-41-leB" secondAttribute="width" id="ehY-dx-Ymz"/>
-                                    <constraint firstAttribute="bottom" secondItem="3iP-LT-GRr" secondAttribute="bottom" id="oEM-Hv-s5F"/>
+                                    <constraint firstAttribute="bottom" secondItem="3iP-LT-GRr" secondAttribute="bottom" constant="-15" id="oEM-Hv-s5F"/>
                                     <constraint firstItem="jfX-1F-Xh7" firstAttribute="top" secondItem="o0C-41-leB" secondAttribute="top" constant="20" id="zoW-30-293"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mO-xP-muP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mO-xP-muP" userLabel="ViewConverter">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-Hg-ciN">
                                         <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="40"/>
@@ -108,8 +112,10 @@
                             <constraint firstItem="o0C-41-leB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="17v-eP-dUn"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="5LE-hB-nFd"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="67k-Au-7BT"/>
+                            <constraint firstItem="o0C-41-leB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="8ul-al-RlP"/>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="M71-tJ-0N1"/>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Non-l6-Gvu"/>
+                            <constraint firstItem="2mO-xP-muP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="O3k-rd-Xet"/>
                             <constraint firstItem="2mO-xP-muP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="V8X-ok-2ma"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="VVA-Ko-iLz"/>
                             <constraint firstItem="o0C-41-leB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="VWq-7D-AYa"/>
@@ -122,12 +128,14 @@
                                 <exclude reference="0gA-6Q-qTR"/>
                                 <exclude reference="M71-tJ-0N1"/>
                                 <exclude reference="Non-l6-Gvu"/>
+                                <exclude reference="O3k-rd-Xet"/>
+                                <exclude reference="8ul-al-RlP"/>
                                 <exclude reference="VVA-Ko-iLz"/>
                                 <exclude reference="VWq-7D-AYa"/>
                                 <exclude reference="X8B-rq-wQW"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
+                        <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <exclude reference="00Z-CY-gdl"/>
                                 <include reference="0gA-6Q-qTR"/>
@@ -141,6 +149,14 @@
                                 <include reference="VVA-Ko-iLz"/>
                                 <include reference="VWq-7D-AYa"/>
                                 <include reference="X8B-rq-wQW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="O3k-rd-Xet"/>
+                                <exclude reference="sgJ-Lf-R8b"/>
+                                <exclude reference="5LE-hB-nFd"/>
+                                <include reference="8ul-al-RlP"/>
                             </mask>
                         </variation>
                     </view>
