@@ -42,8 +42,8 @@ class ViewController: UIViewController {
         let originDistanceType = originSegmentedControl.selectedSegmentIndex
         let destinationDistanceType = destinationSegmentControl.selectedSegmentIndex
         
-        if (distanceTextField.text?.isEmpty)! == false {
-            let originDistanceValue = Double(distanceTextField.text!)!
+        //Si el campo no está vacío y además es un número...
+        if let originDistanceStr = distanceTextField.text, let originDistanceValue = Double(originDistanceStr) {
             var convertedValue = ""
             
             if originDistanceType == 0 {//From Miles
@@ -87,13 +87,12 @@ class ViewController: UIViewController {
                     convertedValue = String(format: "%.2f", originDistanceValue)
                 }
             }
-
+            
             let originText = destinationTypeString(type: originDistanceType)
             let destinationText = destinationTypeString(type: destinationDistanceType)
             resultLabel.text = "\(originDistanceValue) \(originText) = \(convertedValue) \(destinationText)"
-
         } else {
-            resultLabel.text = "You need to enter a value to convert"
+            resultLabel.text = "You need to enter a number to convert"
         }
     }
     
