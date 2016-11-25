@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var distanceTextField: UITextField!
     @IBOutlet var originSegmentedControl: UISegmentedControl!
@@ -17,8 +17,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Le quitamos cualquier valor inicial al label
         resultLabel.text = ""
+        
+        //Aquí definimos que su delegado será este mismo objeto (para ocultar el teclado)
+        distanceTextField.delegate = self
+    }
+    
+    //Esconder el teclado cuando el usuario toque afuera del teclado
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //Esconder el teclado cuando presiona el botón "Return" del teclado
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {
